@@ -20,6 +20,15 @@
 
     
   }
+   .banner {
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  left: 40%;
+  transform: translateX(-40%);
+}
   ul li { border-right: 1px solid rgb(237, 223, 201); position: relative; }
   ul li:first-child { border-left: 1px solid rgb(237, 223, 201); }
   ul li a {
@@ -90,8 +99,23 @@
   <li><a href="blog.html">Blog</a></li>
 </ul>
 
-<h1 style="padding:20px">Hello, fellow students!</h1>
-<p style="padding:0 20px 2000px">This is an example text written originally in English. 
+
+
+
+<div class="banner">
+  <div class="content">
+    <style>
+          p {
+            text-align: justify;
+          }
+        </style>
+        <style>
+          h1 {
+            text-align: justify;
+          }
+        </style>
+    <h1>Hello, fellow students!</h1>
+    <p>This is an example text written originally in English. 
 It aims to emphasize the quality of the translation in hopes of being understandable. 
 The text content therefore is of a lesser importance, so reading it really serves no purpose, but thanks for doing so anyway. 
 The translation needs not only to be understandable, but has to make sense to native speakers. 
@@ -100,14 +124,17 @@ Typically it is noted that such translators don't catch idioms or common phrases
 Now, if I were to say that solving a problem is like <b>killing two birds with one stone</b>, I am not actually killing birds. 
 An automatic translator might not catch this falsehood and will leave readers confused who are unaccustomed to English and reliant on the translation. 
 This highlights the importance of manual translation or in the least proofreading but also show that AI still needs to make advancements. 
-I will now close my rambling.
-</p>
+I will now close my rambling.</p>
+  <p>A common saying might be:</p>
+  <p style="padding:0 20px", > <b>"like killing two birds with one stone"</b> </p>
+  <p style="font-size: small; padding:0 15px 100px;">-> (meaning: achieving two goals or solving two problems at the same time )</p>  
+  </div>
+</div>
 
-  <p style="padding:0 20px 2000px">A common saying might be: <b>"like killing two birds with one stone"</b> (meaning: achieving two goals or solving two problems at the same time )</p>
+  
 
 </body>
 </html>
-
 
 
 
