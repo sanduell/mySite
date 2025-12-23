@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dropdown Fix</title>
+<style>
+  body { margin: 0; padding: 0; }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #0f5926;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    overflow: visible;      
+    z-index: 1000;
+
+    
+  }
+  ul li { border-right: 1px solid rgb(237, 223, 201); position: relative; }
+  ul li:first-child { border-left: 1px solid rgb(237, 223, 201); }
+  ul li a {
+    display: block;
+    color: rgb(237, 223, 201);
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+
+  }
+  li a:hover { background-color: #254607; }
+  .dropdown { 
+    position: relative;
+    display: inline-block;
+  }
+  .dropbtn { cursor: pointer; }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;            
+    left: 0;
+    background-color: #0f5926;
+    min-width: 213px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 2000;       
+  }
+  .dropdown-content a {
+    color: rgb(237, 223, 201);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid rgb(237, 223, 201);
+
+    font-family:  Helvetica;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+
+  }
+  .dropdown-content a:hover { background-color: #254607; }
+  .dropdown:hover .dropdown-content { display: block; }
+  .dropdown:hover .dropbtn { background-color: #254607; }
+
+  
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="home.html"> Home</a></li>
+
+  <li class="dropdown">
+    <a href="#language" class="dropbtn">Language</a>
+    <div class="dropdown-content">
+      <a href="#english">English</a>
+      <a href="#spanish">Español</a>
+      <a href="#french">Français</a>
+    </div>
+  </li>
+
+  <li><a href="test.html">Contact</a></li>
+  <li><a href="blog.html">Blog</a></li>
+</ul>
+
+<h1 style="padding:20px">Hello, fellow students!</h1>
+<p style="padding:0 20px 2000px">Dies ist ein Beispieltext, der ursprünglich auf Englisch verfasst wurde.
+
+Er soll die Qualität der Übersetzung hervorheben und hoffentlich verständlich sein.
+
+Der Textinhalt ist daher zweitrangig, sodass das Lesen eigentlich keinen Sinn ergibt, aber trotzdem vielen Dank.
+
+Die Übersetzung muss nicht nur verständlich, sondern auch für Muttersprachler nachvollziehbar sein.
+
+Dies ist ein Kritikpunkt, der häufig mit automatischen Übersetzungsprogrammen wie Google Translate oder DeepL in Verbindung gebracht wird.
+
+Typischerweise wird angemerkt, dass solche Übersetzer Redewendungen oder gängige Ausdrücke nicht erfassen, die wörtlich übersetzt keinen Sinn ergeben.
+
+Wenn ein automatischer Übersetzer diesen Fehler nicht erkennt, führt dies zu Verwirrung bei Lesern, die nicht an Englisch gewöhnt sind und sich auf die Übersetzung verlassen.
+
+Dies unterstreicht die Wichtigkeit manueller Übersetzungen oder zumindest des Korrekturlesens, zeigt aber auch, dass KI noch Fortschritte machen muss.
+
+Ich beende nun meine Ausführungen.
+
+
+</p>
+<p style="padding:0 20px 2000px"> Ein bekanntes Sprichwort lautet: <b> „Zwei Fliegen mit einer Klappe schlagen“ </b> (im Sinne von: zwei Ziele erreichen oder zwei Probleme gleichzeitig lösen).
+</p>
+
+</body>
+</html>
+
+
